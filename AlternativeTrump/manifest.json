@@ -1,0 +1,21 @@
+{
+"manifest_version": 2,
+    "name": "AlternativeTrump",
+    "description": "Change FoxNews to Der Stürmer, Trump to Hitler, and Republican/Conservative to Nazi. Other fun changes are also included",
+    "version": "0.5",
+    "content_scripts": [
+        {
+            "matches": [
+		"http://*/*",
+		"https://*/*"
+		],
+	    "js": [
+		"content.js"
+		],
+	    "run_at": "document_end"
+	}
+    ],
+    "icons": { "16": "trump_16.png",
+	       "48": "trump_48.png",
+	      "128": "trump_128.png" }
+}
